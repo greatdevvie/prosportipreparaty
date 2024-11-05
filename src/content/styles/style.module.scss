@@ -9,15 +9,19 @@
         text-align: center;
         color: white;
 
-        // @include smaller-than($mantine-breakpoint-sm) {
-        //     font-size: 2rem;
-        // }
+        @media screen and (max-width: 62em) {
+            font-size: 2.8rem;
+        }
     }
 
     &_text {
         font-size: 1.4rem;
         margin-top: 1rem;
         color: white;
+
+        @media screen and (max-width: 62em) {
+            font-size: 1.1rem;
+        }
     }
 
     @keyframes appear {
