@@ -1,0 +1,31 @@
+.base {
+    height: 100vh;
+    background: url('../media/bg.png') no-repeat fixed;
+    opacity: 0;
+    animation: appear 0.5s forwards;
+
+    &_title {
+        font-size: 4rem;
+        text-align: center;
+        color: white;
+
+        // @include smaller-than($mantine-breakpoint-sm) {
+        //     font-size: 2rem;
+        // }
+    }
+
+    &_text {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        color: white;
+    }
+
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
