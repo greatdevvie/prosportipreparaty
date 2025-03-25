@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write 
+
 jobs:
   build:
     name: Build
@@ -40,6 +43,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Download artifact
         uses: actions/download-artifact@v4
