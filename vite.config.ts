@@ -5,11 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/prosportipreparaty/",
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@use "./src/_mantine";`,
-      },
-    },
-  },
 })
